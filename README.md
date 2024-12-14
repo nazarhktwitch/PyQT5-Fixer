@@ -92,7 +92,18 @@ Example log output:
 
 ## Troubleshooting
 
-    If the script fails to find the Qt plugin path, make sure your environment variables are set correctly.
+    If the script fails to find the Qt plugin path, make sure your environment variables are set correctly:
+
+    Find PATH in environment variables and add this lines to start:
+
+       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\bin
+       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
+       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins\platforms
+
+    If you already have QT_PLUGIN_PATH add to start:
+
+      C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
+    
     Ensure that PyQt5 is installed properly and that your Python environment is correctly configured.
 
 ## License
