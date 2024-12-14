@@ -79,10 +79,15 @@ All actions are logged in a log file stored in the logs folder. The log file is 
 Example log output:
 
 [Progress] Log file created: logs/PyQT5-Fixer_log_2024-12-14_17-10.txt
+
 [Progress] Starting PyQt5 fix...
+
 [Progress] Checking PyQt5 installation...
+
 [Error] Qt plugin path not found.
+
 [Progress] Adding Qt plugin path to environment variables...
+
 [Progress] PyQt5 has been fixed successfully!
 
 ## Troubleshooting
