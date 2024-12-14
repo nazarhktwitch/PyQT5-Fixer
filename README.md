@@ -135,6 +135,8 @@ Example log output:
 
    print(f"Qt plugins path: {qt_plugins_path}")
 
+   ```markdown
+
       Or use ready [code](https://github.com/nazarhktwitch/PyQT5-Path-Finder)
 
 
