@@ -179,7 +179,7 @@ For Linux/macOS:
       pip uninstall PyQt5
       pip install PyQt5
       
-      6. Verification
+   6. Verification
       
       After setting the path, ensure the plugin issue is resolved by running your application. If the plugin path is correctly set, the program should run without any issues.
 
