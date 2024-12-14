@@ -136,43 +136,43 @@ import os
    print(f"Qt plugins path: {qt_plugins_path}")
 ```
 
-      Or use ready [code](https://github.com/nazarhktwitch/PyQT5-Path-Finder)
+   Or use ready [code](https://github.com/nazarhktwitch/PyQT5-Path-Finder)
 
 
-      3. Add the plugin path to the environment variable
+   3. Add the plugin path to the environment variable
       
-      Once you have the path to the plugins, you need to add it to the QT_QPA_PLATFORM_PLUGIN_PATH environment variable.
+   Once you have the path to the plugins, you need to add it to the QT_QPA_PLATFORM_PLUGIN_PATH environment variable.
       
-      For Windows:
+For Windows:
       
-          Open Command Prompt.
+   Open Command Prompt.
       
-          Run the following command to set the environment variable temporarily:
+   Run the following command to set the environment variable temporarily:
       
-          set QT_QPA_PLATFORM_PLUGIN_PATH=C:\path\to\PyQt5\Qt5\plugins\platforms
+   set QT_QPA_PLATFORM_PLUGIN_PATH=C:\path\to\PyQt5\Qt5\plugins\platforms
       
-          Replace C:\path\to\PyQt5\Qt5\plugins\platforms with the path you found in the previous step.
+   Replace C:\path\to\PyQt5\Qt5\plugins\platforms with the path you found in the previous step.
+   
+For Linux/macOS:
       
-      For Linux/macOS:
+   Run the following command in the terminal:
       
-      Run the following command in the terminal:
+   export QT_QPA_PLATFORM_PLUGIN_PATH=/path/to/PyQt5/Qt5/plugins/platforms
       
-      export QT_QPA_PLATFORM_PLUGIN_PATH=/path/to/PyQt5/Qt5/plugins/platforms
-      
-      You can also add this line to your configuration file, such as .bashrc or .zshrc, to make it persistent.
+   You can also add this line to your configuration file, such as .bashrc or .zshrc, to make it persistent.
 
-      4. Setting the path via Python (if you don’t want to modify environment variables manually)
+   4. Setting the path via Python (if you don’t want to modify environment variables manually)
       
       In your script, you can programmatically set the environment variable before running your application:
-      
+
+```python
       import os
       
       qt_plugins_path = "C:\\path\\to\\PyQt5\\Qt5\\plugins\\platforms"  # Set your plugins path
       os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = qt_plugins_path
-      
-      This can be added at the beginning of your script to automatically set the path when the script runs.
+```
 
-      5. Reinstall PyQt5
+   5. Reinstall PyQt5
       
       If PyQt5 is still not working, try reinstalling it:
       
