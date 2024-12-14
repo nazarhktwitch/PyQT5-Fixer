@@ -124,8 +124,8 @@ Example log output:
       
       To find the plugin path for your PyQt5 installation, you can use the following Python code:
 
-   ```python
-   import os
+```python
+import os
    import sys
    import site
       
@@ -134,8 +134,7 @@ Example log output:
    qt_plugins_path = os.path.join(pyqt_path, "PyQt5", "Qt", "plugins", "platforms")
 
    print(f"Qt plugins path: {qt_plugins_path}")
-
-   ```markdown
+```
 
       Or use ready [code](https://github.com/nazarhktwitch/PyQT5-Path-Finder)
 
