@@ -92,37 +92,37 @@ Example log output:
 
 ## Troubleshooting
 
-    If the script fails to find the Qt plugin path, make sure your environment variables are set correctly:
+If the script fails to find the Qt plugin path, make sure your environment variables are set correctly:
 
-    CHECK PATH TO YOUR ANACONDA BEFORE THIS
+CHECK PATH TO YOUR ANACONDA BEFORE THIS
     
-    Find PATH in environment variables and add this lines to start:
+Find PATH in environment variables and add this lines to start:
 
-       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\bin
-       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
-       C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins\platforms
+   C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\bin
+   C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
+   C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins\platforms
 
-    If you already have QT_PLUGIN_PATH add to start:
+If you already have QT_PLUGIN_PATH add to start:
 
-      C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
+   C:\ProgramData\Anaconda3\envs\ann_tool\Lib\site-packages\PyQt5\Qt5\plugins
     
-    Ensure that PyQt5 is installed properly and that your Python environment is correctly configured.
+Ensure that PyQt5 is installed properly and that your Python environment is correctly configured.
 
-    how you can set it up if you're using a pure Python installation (without Anaconda):
+How you can set it up if you're using a pure Python installation (without Anaconda):
     
-      1. Check if PyQt5 is installed correctly
+1. Check if PyQt5 is installed correctly
       
-      Run the following command to ensure PyQt5 is installed:
+   Run the following command to ensure PyQt5 is installed:
       
-      pip show PyQt5
+   pip show PyQt5
       
-      If PyQt5 is not installed, install it using:
+   If PyQt5 is not installed, install it using:
       
-      pip install PyQt5
+   pip install PyQt5
       
-      2. Find the path to the Qt plugins
+   2. Find the path to the Qt plugins
       
-      To find the plugin path for your PyQt5 installation, you can use the following Python code:
+   To find the plugin path for your PyQt5 installation, you can use the following Python code:
 
 ```python
 import os
